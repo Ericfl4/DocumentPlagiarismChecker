@@ -74,7 +74,9 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
                 float match = (left == 0 || right == 0 ? 0 : (left < right ? (float)left / (float)right : (float)right / (float)left));
 
                 cr.AddMatch(match);
-                cr.DetailsData.Add(new object[]{word, left, right, match});                
+                cr.DetailsData.Add(new object[]{word, left, right, match});     
+
+                int z = 0;           
             }                                    
             
             return cr;
