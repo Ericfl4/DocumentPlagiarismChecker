@@ -28,6 +28,7 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
         /// <param name="settings">The settings instance that will use the comparator.</param>
         /// <returns></returns>
         public Comparator(string fileLeftPath, string fileRightPath, Settings settings): base(fileLeftPath, fileRightPath, settings){
+            /// This is the constructor
         }  
         
         /// <summary>
