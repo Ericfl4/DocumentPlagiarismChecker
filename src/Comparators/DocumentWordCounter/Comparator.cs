@@ -28,6 +28,7 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
         /// <param name="settings">The settings instance that will use the comparator.</param>
         /// <returns></returns>
         public Comparator(string fileLeftPath, string fileRightPath, Settings settings): base(fileLeftPath, fileRightPath, settings){
+            /// This is the constructor
         }  
         
         /// <summary>
@@ -48,6 +49,7 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
             }
             //Hola caracola
             //Counting sample file word appearences, in order to ignore those from the previous files.
+            //hola
             if(this.Sample != null){
                  foreach(string word in this.Sample.WordAppearances.Select(x => x.Key)){
                     if(counter.ContainsKey(word)){
