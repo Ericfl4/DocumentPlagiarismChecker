@@ -77,6 +77,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphLengthCounter
             return cr;
             int c;
             int p;
+            int petate;
         }
     }   
 }
