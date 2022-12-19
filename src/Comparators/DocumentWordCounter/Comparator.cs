@@ -46,8 +46,8 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
                 if(!counter.ContainsKey(word)) counter.Add(word, new int[]{0, 0});
                 counter[word][1] += Right.WordAppearances[word];
             }
-
-            //Comptar les aparences de paraules de fitxers de mostra, per ignorar les dels fitxers anteriors.
+            //Hola caracola
+            //Counting sample file word appearences, in order to ignore those from the previous files.
             if(this.Sample != null){
                  foreach(string word in this.Sample.WordAppearances.Select(x => x.Key)){
                     if(counter.ContainsKey(word)){
