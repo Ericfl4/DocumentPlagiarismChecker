@@ -49,7 +49,7 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
             }
             //Hola caracola
             //Counting sample file word appearences, in order to ignore those from the previous files.
-            //hola
+            //adios
             if(this.Sample != null){
                  foreach(string word in this.Sample.WordAppearances.Select(x => x.Key)){
                     if(counter.ContainsKey(word)){
@@ -75,6 +75,8 @@ namespace DocumentPlagiarismChecker.Comparators.DocumentWordCounter
 
                 cr.AddMatch(match);
                 cr.DetailsData.Add(new object[]{word, left, right, match});                
+
+                int j = 0;
             }                                    
             
             return cr;
